@@ -315,7 +315,7 @@
       });
 
       // custom query
-      MP.api.setCredentials('e9eb40d73246d38af2e3a425761a73b4', '0d4eaad557622208b4dcdcb1d035aecf');
+      // MP.api.setCredentials('e9eb40d73246d38af2e3a425761a73b4', '0d4eaad557622208b4dcdcb1d035aecf');
       function runQuery() {
         // set up parameters
         event_list = $('#event_list').val().split(',');
@@ -335,9 +335,7 @@
             from_date: date_to_string(dateVal.from),
             to_date: date_to_string(dateVal.to),
           }
-        var params = {
-          params: JSON.stringify(queryParams)
-        };
+        var params = JSON.stringify(queryParams);
         var script = $('#cq').html();
         script = $.trim(script);
         
